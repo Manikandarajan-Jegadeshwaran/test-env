@@ -4,6 +4,10 @@ import './App.css';
 function App() {
   const fallbackUrl = 'https://itunes.apple.com/sg/app/dbs-digibank-sg/id1068403826?mt=8';
 
+  const androidUrl = 'intent://com.dbs.sg.dbsmbanking/promoid/?serviceID=BANCA_WEBVIEW_PRODUCT&source=MB&BANCA_WEBVIEW_PRODUCT_CODE=mpd#Intent;scheme=dbsmbanking;package=com.dbs.sg.dbsmbanking;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.dbs.sg.dbsmbanking&hl=en;end'
+
+  const isIOSDevice = () => navigator.userAgent.indexOf('iPhone') !== -1
+
   const openApp = (url) => {
     const isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
       navigator.userAgent &&
@@ -11,15 +15,23 @@ function App() {
       navigator.userAgent.indexOf('FxiOS') === -1;
 
 
-    if (isSafari) {
-      window.open(url, '_system')
-      window.open(fallbackUrl, '_system')
+    if (isIOSDevice()) {
+      alert('ios')
+      if (isSafari) {
+        window.open(url, '_system')
+        window.open(fallbackUrl, '_system')
+      } else {
+        window.setTimeout(() => {
+          window.location.href = fallbackUrl
+        }, 3000)
+        window.location.href = url
+      }
     } else {
-      window.setTimeout(() => {
-        window.location.href = fallbackUrl
-      }, 3000)
-      window.location.href = url
+      window.location.href = androidUrl
     }
+
+
+
 
 
 
