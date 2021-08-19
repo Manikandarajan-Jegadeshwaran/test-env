@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/test-env/static/css/main.21eff7af.chunk.css",
+    "main.js": "/test-env/static/js/main.e92c8d69.chunk.js",
+    "main.js.map": "/test-env/static/js/main.e92c8d69.chunk.js.map",
+    "runtime-main.js": "/test-env/static/js/runtime-main.9a785d47.js",
+    "runtime-main.js.map": "/test-env/static/js/runtime-main.9a785d47.js.map",
+    "static/js/2.ea6a869f.chunk.js": "/test-env/static/js/2.ea6a869f.chunk.js",
+    "static/js/2.ea6a869f.chunk.js.map": "/test-env/static/js/2.ea6a869f.chunk.js.map",
+    "static/js/3.f3f6159c.chunk.js": "/test-env/static/js/3.f3f6159c.chunk.js",
+    "static/js/3.f3f6159c.chunk.js.map": "/test-env/static/js/3.f3f6159c.chunk.js.map",
+    "index.html": "/test-env/index.html",
+    "static/css/main.21eff7af.chunk.css.map": "/test-env/static/css/main.21eff7af.chunk.css.map",
+    "static/js/2.ea6a869f.chunk.js.LICENSE.txt": "/test-env/static/js/2.ea6a869f.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/test-env/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a785d47.js",
+    "static/js/2.ea6a869f.chunk.js",
+    "static/css/main.21eff7af.chunk.css",
+    "static/js/main.e92c8d69.chunk.js"
+  ]
+}
