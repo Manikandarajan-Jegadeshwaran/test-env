@@ -17,7 +17,7 @@ function App() {
     } else {
       window.setTimeout(() => {
         window.location.href = fallbackUrl
-      }, 1000)
+      }, 3000)
       window.location.href = url
     }
 
