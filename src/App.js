@@ -16,7 +16,6 @@ function App() {
 
 
     if (isIOSDevice()) {
-      alert('ios')
       if (isSafari) {
         window.open(url, '_system')
         window.open(fallbackUrl, '_system')
